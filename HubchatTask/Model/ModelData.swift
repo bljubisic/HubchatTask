@@ -8,20 +8,24 @@
 
 import Foundation
 
+enum URLs {
+    static let headers = "https://api.hubchat.com/v1/forum/photography"
+    static let posts = "https://api.hubchat.com/v1/forum/photography/post"
+}
 
 struct PhotographForumHeader {
-    let headerImage: String
-    let logoImage: String
-    let title: String
-    let description: String
-    let posts: [PostData]
+    var headerImage: String
+    var logoImage: String
+    var title: String
+    var description: String
+    var posts: [PostData]
 }
 
 struct PostData {
-    let postText: String
-    let user: ProfileData
-    let images: [String]
-    let upvotes: Int
+    var postText: String
+    var user: ProfileData
+    var images: [String]
+    var upvotes: Int
 }
 
 struct ProfileData {
