@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1258941E5709DC0075341B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1258931E5709DC0075341B /* AppDelegate.swift */; };
+		0B1258991E5709DC0075341B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1258971E5709DC0075341B /* Main.storyboard */; };
+		0B12589B1E5709DC0075341B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B12589A1E5709DC0075341B /* Assets.xcassets */; };
+		0B12589E1E5709DC0075341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B12589C1E5709DC0075341B /* LaunchScreen.storyboard */; };
+		0B1258A91E5709DD0075341B /* HubchatTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1258A81E5709DD0075341B /* HubchatTaskTests.swift */; };
+		0B1258B41E5709DD0075341B /* HubchatTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1258B31E5709DD0075341B /* HubchatTaskUITests.swift */; };
+		0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03A1E570D1200F62128 /* ModelData.swift */; };
+		0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */; };
+		0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */; };
+		E2969022476C539D65D4B9F7 /* Pods_HubchatTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B1258A51E5709DD0075341B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B1258881E5709DC0075341B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B12588F1E5709DC0075341B;
+			remoteInfo = HubchatTask;
+		};
+		0B1258B01E5709DD0075341B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B1258881E5709DC0075341B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B12588F1E5709DC0075341B;
+			remoteInfo = HubchatTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1258901E5709DC0075341B /* HubchatTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubchatTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1258931E5709DC0075341B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B1258981E5709DC0075341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B12589A1E5709DC0075341B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B12589D1E5709DC0075341B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B12589F1E5709DC0075341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1258A41E5709DD0075341B /* HubchatTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubchatTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1258A81E5709DD0075341B /* HubchatTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubchatTaskTests.swift; sourceTree = "<group>"; };
+		0B1258AA1E5709DD0075341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1258AF1E5709DD0075341B /* HubchatTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubchatTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1258B31E5709DD0075341B /* HubchatTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubchatTaskUITests.swift; sourceTree = "<group>"; };
+		0B1258B51E5709DD0075341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDEA03A1E570D1200F62128 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelData.swift; path = Model/ModelData.swift; sourceTree = "<group>"; };
+		0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelProtocol.swift; path = Model/ModelProtocol.swift; sourceTree = "<group>"; };
+		0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelProtocol.swift; path = ViewModel/ViewModelProtocol.swift; sourceTree = "<group>"; };
+		6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubchatTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.release.xcconfig"; sourceTree = "<group>"; };
+		A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B12588D1E5709DC0075341B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2969022476C539D65D4B9F7 /* Pods_HubchatTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258A11E5709DD0075341B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258AC1E5709DD0075341B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1258871E5709DC0075341B = {
+			isa = PBXGroup;
+			children = (
+				0B1258921E5709DC0075341B /* HubchatTask */,
+				0B1258A71E5709DD0075341B /* HubchatTaskTests */,
+				0B1258B21E5709DD0075341B /* HubchatTaskUITests */,
+				0B1258911E5709DC0075341B /* Products */,
+				525FD6221020AD9731A247AB /* Pods */,
+				87F7B3B8DE1FA3B273AC41D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B1258911E5709DC0075341B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B1258901E5709DC0075341B /* HubchatTask.app */,
+				0B1258A41E5709DD0075341B /* HubchatTaskTests.xctest */,
+				0B1258AF1E5709DD0075341B /* HubchatTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B1258921E5709DC0075341B /* HubchatTask */ = {
+			isa = PBXGroup;
+			children = (
+				0B341DA11E570B1500412A72 /* Model */,
+				0B341DA31E570B2200412A72 /* View */,
+				0B341DA21E570B1B00412A72 /* ViewModel */,
+				0B1258931E5709DC0075341B /* AppDelegate.swift */,
+				0B1258971E5709DC0075341B /* Main.storyboard */,
+				0B12589A1E5709DC0075341B /* Assets.xcassets */,
+				0B12589C1E5709DC0075341B /* LaunchScreen.storyboard */,
+				0B12589F1E5709DC0075341B /* Info.plist */,
+			);
+			path = HubchatTask;
+			sourceTree = "<group>";
+		};
+		0B1258A71E5709DD0075341B /* HubchatTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1258A81E5709DD0075341B /* HubchatTaskTests.swift */,
+				0B1258AA1E5709DD0075341B /* Info.plist */,
+			);
+			path = HubchatTaskTests;
+			sourceTree = "<group>";
+		};
+		0B1258B21E5709DD0075341B /* HubchatTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1258B31E5709DD0075341B /* HubchatTaskUITests.swift */,
+				0B1258B51E5709DD0075341B /* Info.plist */,
+			);
+			path = HubchatTaskUITests;
+			sourceTree = "<group>";
+		};
+		0B341DA11E570B1500412A72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BDEA03A1E570D1200F62128 /* ModelData.swift */,
+				0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0B341DA21E570B1B00412A72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B341DA31E570B2200412A72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		525FD6221020AD9731A247AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */,
+				9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87F7B3B8DE1FA3B273AC41D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B12588F1E5709DC0075341B /* HubchatTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1258B81E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTask" */;
+			buildPhases = (
+				816DC641608F113997E0ED58 /* [CP] Check Pods Manifest.lock */,
+				0B12588C1E5709DC0075341B /* Sources */,
+				0B12588D1E5709DC0075341B /* Frameworks */,
+				0B12588E1E5709DC0075341B /* Resources */,
+				03F4C2E18C1B5BE40B347EA2 /* [CP] Embed Pods Frameworks */,
+				A97749E4ACE70D59C937C681 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HubchatTask;
+			productName = HubchatTask;
+			productReference = 0B1258901E5709DC0075341B /* HubchatTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B1258A31E5709DD0075341B /* HubchatTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1258BB1E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTaskTests" */;
+			buildPhases = (
+				0B1258A01E5709DD0075341B /* Sources */,
+				0B1258A11E5709DD0075341B /* Frameworks */,
+				0B1258A21E5709DD0075341B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1258A61E5709DD0075341B /* PBXTargetDependency */,
+			);
+			name = HubchatTaskTests;
+			productName = HubchatTaskTests;
+			productReference = 0B1258A41E5709DD0075341B /* HubchatTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B1258AE1E5709DD0075341B /* HubchatTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1258BE1E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTaskUITests" */;
+			buildPhases = (
+				0B1258AB1E5709DD0075341B /* Sources */,
+				0B1258AC1E5709DD0075341B /* Frameworks */,
+				0B1258AD1E5709DD0075341B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1258B11E5709DD0075341B /* PBXTargetDependency */,
+			);
+			name = HubchatTaskUITests;
+			productName = HubchatTaskUITests;
+			productReference = 0B1258AF1E5709DD0075341B /* HubchatTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B1258881E5709DC0075341B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Bratislav Ljubisic";
+				TargetAttributes = {
+					0B12588F1E5709DC0075341B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ENT89NLKC9;
+						ProvisioningStyle = Automatic;
+					};
+					0B1258A31E5709DD0075341B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ENT89NLKC9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B12588F1E5709DC0075341B;
+					};
+					0B1258AE1E5709DD0075341B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ENT89NLKC9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B12588F1E5709DC0075341B;
+					};
+				};
+			};
+			buildConfigurationList = 0B12588B1E5709DC0075341B /* Build configuration list for PBXProject "HubchatTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B1258871E5709DC0075341B;
+			productRefGroup = 0B1258911E5709DC0075341B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B12588F1E5709DC0075341B /* HubchatTask */,
+				0B1258A31E5709DD0075341B /* HubchatTaskTests */,
+				0B1258AE1E5709DD0075341B /* HubchatTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B12588E1E5709DC0075341B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B12589E1E5709DC0075341B /* LaunchScreen.storyboard in Resources */,
+				0B12589B1E5709DC0075341B /* Assets.xcassets in Resources */,
+				0B1258991E5709DC0075341B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258A21E5709DD0075341B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258AD1E5709DD0075341B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F4C2E18C1B5BE40B347EA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816DC641608F113997E0ED58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A97749E4ACE70D59C937C681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B12588C1E5709DC0075341B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */,
+				0B1258941E5709DC0075341B /* AppDelegate.swift in Sources */,
+				0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */,
+				0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258A01E5709DD0075341B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1258A91E5709DD0075341B /* HubchatTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1258AB1E5709DD0075341B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1258B41E5709DD0075341B /* HubchatTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B1258A61E5709DD0075341B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B12588F1E5709DC0075341B /* HubchatTask */;
+			targetProxy = 0B1258A51E5709DD0075341B /* PBXContainerItemProxy */;
+		};
+		0B1258B11E5709DD0075341B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B12588F1E5709DC0075341B /* HubchatTask */;
+			targetProxy = 0B1258B01E5709DD0075341B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B1258971E5709DC0075341B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1258981E5709DC0075341B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B12589C1E5709DC0075341B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B12589D1E5709DC0075341B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B1258B61E5709DD0075341B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B1258B71E5709DD0075341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1258B91E5709DD0075341B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0B1258BA1E5709DD0075341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0B1258BC1E5709DD0075341B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HubchatTask.app/HubchatTask";
+			};
+			name = Debug;
+		};
+		0B1258BD1E5709DD0075341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HubchatTask.app/HubchatTask";
+			};
+			name = Release;
+		};
+		0B1258BF1E5709DD0075341B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HubchatTask;
+			};
+			name = Debug;
+		};
+		0B1258C01E5709DD0075341B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ENT89NLKC9;
+				INFOPLIST_FILE = HubchatTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persukibo.HubchatTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HubchatTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B12588B1E5709DC0075341B /* Build configuration list for PBXProject "HubchatTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1258B61E5709DD0075341B /* Debug */,
+				0B1258B71E5709DD0075341B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1258B81E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1258B91E5709DD0075341B /* Debug */,
+				0B1258BA1E5709DD0075341B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1258BB1E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1258BC1E5709DD0075341B /* Debug */,
+				0B1258BD1E5709DD0075341B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1258BE1E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1258BF1E5709DD0075341B /* Debug */,
+				0B1258C01E5709DD0075341B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B1258881E5709DC0075341B /* Project object */;
+}
