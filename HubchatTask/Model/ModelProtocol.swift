@@ -7,20 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 protocol ModelProtocol {
-    
-    func getPhotographyForumHeader()
-    func getPhotographyPostsFor(PhotographyHeader photoForumStruct: PhotographForumHeader)
-    
-    var photographyForumStruct: PhotographForumHeader? { get }
-    
+
     weak var delegate: ModelDelegate? { get set }
-    
+    func getPhotographyForumData() -> Void
     func setImageWithCompletion(completion: (Data, Error) -> Void)
     
 }
 
 protocol ModelDelegate: class {
     
+    func photographyForumDataReceived(headerData: PhotographForumHeader) -> Void
 }
