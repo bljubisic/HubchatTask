@@ -11,13 +11,15 @@ import UIKit
 
 protocol ViewModelProtocol {
     
+    weak var delegate: ViewModelDelegate? {get set}
+    var posts:[PostData]? { get }
+    var model: ModelProtocol? { get }
     
     func getPhotographyForumHeaderData() -> Void
-    func getPhotographyForumPosts() -> Void
-    func setImageWithCompletion(completion: (UIImage) -> Void)
+    func setImageFrom(url:String, toImageView image: UIImageView) -> Void
 }
 
-protocol ViewModelDelegate {
+protocol ViewModelDelegate: class {
     func photographyForumHeaderDataReceived(photographyStruct: PhotographForumHeader) -> Void
     func photographyForumPostsReceived(posts: [PostData]) -> Void
 }
