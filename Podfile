@@ -4,6 +4,7 @@ use_frameworks!
 target 'HubchatTask' do
     pod 'Alamofire'
     pod 'SnapKit'
+    pod 'SwiftyJSON'
 end
 
 post_install do |installer|
