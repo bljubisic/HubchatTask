@@ -16,6 +16,11 @@
 		0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03A1E570D1200F62128 /* ModelData.swift */; };
 		0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */; };
 		0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */; };
+		0BF3DD2E1E57AC2D00D34471 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DD2D1E57AC2D00D34471 /* ViewModel.swift */; };
+		0BF3DD301E57AF7100D34471 /* HCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DD2F1E57AF7100D34471 /* HCModel.swift */; };
+		0BF3DD391E57B01900D34471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD381E57B01900D34471 /* Alamofire.framework */; };
+		0BF3DD3B1E57B01D00D34471 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */; };
+		0BF3DD3D1E57B37400D34471 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD3C1E57B37400D34471 /* SwiftyJSON.framework */; };
 		E2969022476C539D65D4B9F7 /* Pods_HubchatTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,11 @@
 		0BDEA03A1E570D1200F62128 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelData.swift; path = Model/ModelData.swift; sourceTree = "<group>"; };
 		0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelProtocol.swift; path = Model/ModelProtocol.swift; sourceTree = "<group>"; };
 		0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelProtocol.swift; path = ViewModel/ViewModelProtocol.swift; sourceTree = "<group>"; };
+		0BF3DD2D1E57AC2D00D34471 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = ViewModel/ViewModel.swift; sourceTree = "<group>"; };
+		0BF3DD2F1E57AF7100D34471 /* HCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HCModel.swift; path = Model/HCModel.swift; sourceTree = "<group>"; };
+		0BF3DD381E57B01900D34471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		0BF3DD3C1E57B37400D34471 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubchatTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.release.xcconfig"; sourceTree = "<group>"; };
 		A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF3DD3D1E57B37400D34471 /* SwiftyJSON.framework in Frameworks */,
+				0BF3DD3B1E57B01D00D34471 /* SnapKit.framework in Frameworks */,
+				0BF3DD391E57B01900D34471 /* Alamofire.framework in Frameworks */,
 				E2969022476C539D65D4B9F7 /* Pods_HubchatTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +156,7 @@
 			children = (
 				0BDEA03A1E570D1200F62128 /* ModelData.swift */,
 				0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */,
+				0BF3DD2F1E57AF7100D34471 /* HCModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -151,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */,
+				0BF3DD2D1E57AC2D00D34471 /* ViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -174,6 +189,9 @@
 		87F7B3B8DE1FA3B273AC41D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BF3DD3C1E57B37400D34471 /* SwiftyJSON.framework */,
+				0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */,
+				0BF3DD381E57B01900D34471 /* Alamofire.framework */,
 				6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */,
 			);
 			name = Frameworks;
@@ -367,9 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF3DD2E1E57AC2D00D34471 /* ViewModel.swift in Sources */,
 				0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */,
 				0B1258941E5709DC0075341B /* AppDelegate.swift in Sources */,
 				0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */,
+				0BF3DD301E57AF7100D34471 /* HCModel.swift in Sources */,
 				0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
