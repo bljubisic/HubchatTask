@@ -21,6 +21,10 @@
 		0BF3DD391E57B01900D34471 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD381E57B01900D34471 /* Alamofire.framework */; };
 		0BF3DD3B1E57B01D00D34471 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */; };
 		0BF3DD3D1E57B37400D34471 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF3DD3C1E57B37400D34471 /* SwiftyJSON.framework */; };
+		0BF3DD3F1E5870D600D34471 /* PhotgraphyForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DD3E1E5870D600D34471 /* PhotgraphyForumViewController.swift */; };
+		0BF3DD411E58721000D34471 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DD401E58721000D34471 /* HeaderTableViewCell.swift */; };
+		0BF3DD441E587DFB00D34471 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DD431E587DFB00D34471 /* ContentTableViewCell.swift */; };
+		94A1CE0D351EBDC3AD9B11C4 /* Pods_HubchatTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78E03D20A62B06AED827A78 /* Pods_HubchatTaskTests.framework */; };
 		E2969022476C539D65D4B9F7 /* Pods_HubchatTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +66,15 @@
 		0BF3DD381E57B01900D34471 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		0BF3DD3C1E57B37400D34471 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/HubchatTask-aahuwzucszbazwfoqjohobqhwvbp/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		0BF3DD3E1E5870D600D34471 /* PhotgraphyForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotgraphyForumViewController.swift; path = View/PhotgraphyForumViewController.swift; sourceTree = "<group>"; };
+		0BF3DD401E58721000D34471 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderTableViewCell.swift; path = View/HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		0BF3DD431E587DFB00D34471 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentTableViewCell.swift; path = View/ContentTableViewCell.swift; sourceTree = "<group>"; };
+		29E138B4F2529A6FC302ADFB /* Pods-HubchatTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTaskTests/Pods-HubchatTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubchatTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D74D29205B9F56FC3AAB32B /* Pods-HubchatTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTaskTests/Pods-HubchatTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.release.xcconfig"; sourceTree = "<group>"; };
 		A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubchatTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask.debug.xcconfig"; sourceTree = "<group>"; };
+		F78E03D20A62B06AED827A78 /* Pods_HubchatTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubchatTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A1CE0D351EBDC3AD9B11C4 /* Pods_HubchatTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +184,9 @@
 		0B341DA31E570B2200412A72 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0BF3DD3E1E5870D600D34471 /* PhotgraphyForumViewController.swift */,
+				0BF3DD401E58721000D34471 /* HeaderTableViewCell.swift */,
+				0BF3DD431E587DFB00D34471 /* ContentTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +196,8 @@
 			children = (
 				A6C65D453027E5CD04286E64 /* Pods-HubchatTask.debug.xcconfig */,
 				9EFD3241FC1EA0B0BDE5238D /* Pods-HubchatTask.release.xcconfig */,
+				7D74D29205B9F56FC3AAB32B /* Pods-HubchatTaskTests.debug.xcconfig */,
+				29E138B4F2529A6FC302ADFB /* Pods-HubchatTaskTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -193,6 +209,7 @@
 				0BF3DD3A1E57B01D00D34471 /* SnapKit.framework */,
 				0BF3DD381E57B01900D34471 /* Alamofire.framework */,
 				6E1BC921A017590EBBCBA29C /* Pods_HubchatTask.framework */,
+				F78E03D20A62B06AED827A78 /* Pods_HubchatTaskTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B1258BB1E5709DD0075341B /* Build configuration list for PBXNativeTarget "HubchatTaskTests" */;
 			buildPhases = (
+				EA34DC0DE0430CDE14EB919F /* [CP] Check Pods Manifest.lock */,
 				0B1258A01E5709DD0075341B /* Sources */,
 				0B1258A11E5709DD0075341B /* Frameworks */,
 				0B1258A21E5709DD0075341B /* Resources */,
+				0E641B7C05D0C7A746E8D65B /* [CP] Embed Pods Frameworks */,
+				E7680C5B5BC709D250BB0D7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +368,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0E641B7C05D0C7A746E8D65B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTaskTests/Pods-HubchatTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		816DC641608F113997E0ED58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +413,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTask/Pods-HubchatTask-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E7680C5B5BC709D250BB0D7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubchatTaskTests/Pods-HubchatTaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA34DC0DE0430CDE14EB919F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -385,9 +450,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF3DD411E58721000D34471 /* HeaderTableViewCell.swift in Sources */,
 				0BF3DD2E1E57AC2D00D34471 /* ViewModel.swift in Sources */,
+				0BF3DD441E587DFB00D34471 /* ContentTableViewCell.swift in Sources */,
 				0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */,
 				0B1258941E5709DC0075341B /* AppDelegate.swift in Sources */,
+				0BF3DD3F1E5870D600D34471 /* PhotgraphyForumViewController.swift in Sources */,
 				0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */,
 				0BF3DD301E57AF7100D34471 /* HCModel.swift in Sources */,
 				0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */,
@@ -570,8 +638,9 @@
 		};
 		0B1258BC1E5709DD0075341B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D74D29205B9F56FC3AAB32B /* Pods-HubchatTaskTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ENT89NLKC9;
 				INFOPLIST_FILE = HubchatTaskTests/Info.plist;
@@ -585,8 +654,9 @@
 		};
 		0B1258BD1E5709DD0075341B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E138B4F2529A6FC302ADFB /* Pods-HubchatTaskTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ENT89NLKC9;
 				INFOPLIST_FILE = HubchatTaskTests/Info.plist;
