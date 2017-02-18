@@ -12,6 +12,7 @@ import UIKit
 protocol ViewModelProtocol {
     
     weak var delegate: ViewModelDelegate? {get set}
+    var header: PhotographForumHeader? { get }
     var posts:[PostData]? { get }
     var model: ModelProtocol? { get }
     
@@ -20,6 +21,5 @@ protocol ViewModelProtocol {
 }
 
 protocol ViewModelDelegate: class {
-    func photographyForumHeaderDataReceived(photographyStruct: PhotographForumHeader) -> Void
-    func photographyForumPostsReceived(posts: [PostData]) -> Void
+    func photographyForumDataReceived(photographyStruct: PhotographForumHeader) -> Void
 }
