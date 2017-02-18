@@ -29,7 +29,7 @@ class HCModel: ModelProtocol {
                     var postData = PostData()
                     postData.postText = post["rawContent"].stringValue
                     postData.user = ProfileData(avatar: post["createdBy"]["avatar"]["url"].stringValue, username: post["createdBy"]["username"].stringValue)
-                    for image in post["images"].arrayValue {
+                    for image in post["entities"]["images"].arrayValue {
                         postData.images.append(image["cdnUrl"].stringValue)
                     }
                     posts.append(postData)
@@ -67,7 +67,9 @@ class HCModel: ModelProtocol {
         }
     }
 
-    func setImageWithCompletion(completion: (Data, Error) -> Void) {
-        
+    func setImageWithCompletion(withURL url:String, completion: @escaping (Data?, Error?) -> Void) {
+        Alamofire.request(url).responseData { (data) in
+            completion(data.data, nil)
+        }
     }
 }
