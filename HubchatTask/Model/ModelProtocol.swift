@@ -13,8 +13,6 @@ protocol ModelProtocol {
 
     weak var delegate: ModelDelegate? { get set }
     func getPhotographyForumData() -> Void
-    //func getPhotographyForumPosts(completion: @escaping (JSON) -> Void) -> Void
-    //func getPhotographyForumHeader(completion: @escaping (JSON) -> Void)
     func setImageWithCompletion(withURL url: String, completion: @escaping (Data?, Error?) -> Void)
     
 }
