@@ -30,13 +30,6 @@ class PhotgraphyForumViewController: UIViewController {
             make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(20, 5, 5, 0))
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
 extension PhotgraphyForumViewController: ViewModelDelegate {
@@ -63,12 +56,34 @@ extension PhotgraphyForumViewController: UITableViewDataSource {
         guard let posts = viewModel.posts else {
             return cell
         }
+        cell.contentTextLabel.text = posts[indexPath.row].postText
+        cell.usernameLabel.text = posts[indexPath.row].user.username
         viewModel.setImageFrom(url: posts[indexPath.row].user.avatar, toImageView: cell.avatarImage)
+       
+        let images = posts[indexPath.row].images
+        if images.count > 0 {
+            var i = 0
+            while (i < 4 && images.count > 4) || (i < images.count && images.count <= 4) {
+
+                viewModel.setImageFrom(url: images[i], toImageView: cell.imagesView.subviews[i] as! UIImageView)
+                i = i + 1
+            }
+        }
+        else {
+            cell.firstImage.image = nil
+            cell.secondImage.image = nil
+            cell.thirdImage.image = nil
+            cell.fourthImage.image = nil
+        }
+        if images.count > 4 {
+            let res = images.count - 4
+            cell.moreImagesLabel.text = "+\(res)"
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 180
     }
 }
 
