@@ -19,6 +19,7 @@ class ContentTableViewCell: UITableViewCell {
     var thirdImage: UIImageView!
     var fourthImage: UIImageView!
     var moreImagesLabel: UILabel!
+    var upVotesLabel: UILabel!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -37,6 +38,7 @@ class ContentTableViewCell: UITableViewCell {
         self.moreImagesLabel = UILabel()
         self.moreImagesLabel.font = UIFont.boldSystemFont(ofSize: 18)
         self.moreImagesLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.upVotesLabel = UILabel()
         
         contentView.addSubview(avatarImage)
         contentView.addSubview(contentTextLabel)
@@ -47,7 +49,7 @@ class ContentTableViewCell: UITableViewCell {
         imagesView.addSubview(fourthImage)
         imagesView.addSubview(moreImagesLabel)
         contentView.addSubview(imagesView)
-
+        contentView.addSubview(upVotesLabel)
         
         self.avatarImage.snp.makeConstraints { (make) in
             make.bottom.equalTo(usernameLabel).inset(0)
@@ -109,6 +111,11 @@ class ContentTableViewCell: UITableViewCell {
             make.left.equalTo(fourthImage).inset(30)
             make.top.equalTo(fourthImage).inset(10)
             make.bottom.equalTo(fourthImage).inset(2)
+        }
+        self.upVotesLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(contentView).inset(20)
+            make.bottom.equalTo(contentView).inset(5)
+            make.width.equalTo(100)
         }
         
     }
