@@ -25,8 +25,9 @@ class HeaderTableViewCell: UITableViewCell {
         self.titleLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.descriptionLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        self.descriptionLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        
+        self.descriptionLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        self.descriptionLabel.lineBreakMode = .byWordWrapping
+        self.descriptionLabel.numberOfLines = 0
         contentView.addSubview(headerImage)
         contentView.addSubview(logoImage)
         contentView.addSubview(titleLabel)
@@ -41,17 +42,18 @@ class HeaderTableViewCell: UITableViewCell {
             make.top.equalTo(contentView).inset(16)
             make.left.equalTo(contentView).inset(14)
             make.width.equalTo(90)
+            
         }
         
         self.titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(contentView).inset(16)
+            make.top.equalTo(contentView).inset(5)
             make.left.equalTo(self.logoImage).inset(125)
-            make.bottom.equalTo(contentView).inset(46)
+            //make.bottom.equalTo(contentView).inset(46)
             make.width.equalTo(220)
         }
         
         self.descriptionLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.titleLabel).inset(16)
+            make.top.equalTo(self.titleLabel.snp.bottom).inset(5)
             make.left.equalTo(self.logoImage).inset(125)
             make.bottom.equalTo(contentView).inset(9)
             make.width.equalTo(220)
@@ -61,16 +63,6 @@ class HeaderTableViewCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    private func setup() -> Void {
-        
     }
 
 }
