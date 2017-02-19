@@ -32,6 +32,7 @@ class HCModel: ModelProtocol {
                     for image in post["entities"]["images"].arrayValue {
                         postData.images.append(image["cdnUrl"].stringValue)
                     }
+                    postData.upvotes = post["stats"]["upVotes"].intValue
                     posts.append(postData)
                 }
                 photographyForumHeaderData.posts = posts
