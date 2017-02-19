@@ -58,6 +58,7 @@ extension PhotgraphyForumViewController: UITableViewDataSource {
         }
         cell.contentTextLabel.text = posts[indexPath.row].postText
         cell.usernameLabel.text = posts[indexPath.row].user.username
+        cell.upVotesLabel.text = "Up Votes: \(posts[indexPath.row].upvotes)"
         viewModel.setImageFrom(url: posts[indexPath.row].user.avatar, toImageView: cell.avatarImage)
        
         let images = posts[indexPath.row].images
@@ -83,7 +84,7 @@ extension PhotgraphyForumViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 200
     }
 }
 
