@@ -75,7 +75,7 @@ class ContentTableViewCell: UITableViewCell {
             make.top.equalTo(avatarImage.snp.bottom).inset(-5)
             make.centerX.equalTo(contentView)
             make.height.equalTo(69)
-            make.width.equalTo(310)
+            make.width.equalTo(330)
         }
         
         self.firstImage.snp.makeConstraints { (make) in

@@ -12,6 +12,7 @@
 		0B12589E1E5709DC0075341B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B12589C1E5709DC0075341B /* LaunchScreen.storyboard */; };
 		0B1258A91E5709DD0075341B /* HubchatTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1258A81E5709DD0075341B /* HubchatTaskTests.swift */; };
 		0B1258B41E5709DD0075341B /* HubchatTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1258B31E5709DD0075341B /* HubchatTaskUITests.swift */; };
+		0B9434991F267A6D0068A85E /* QueueTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9434981F267A6D0068A85E /* QueueTestSwift.swift */; };
 		0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03A1E570D1200F62128 /* ModelData.swift */; };
 		0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */; };
 		0BDEA03F1E572C1B00F62128 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */; };
@@ -57,6 +58,8 @@
 		0B1258AF1E5709DD0075341B /* HubchatTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubchatTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1258B31E5709DD0075341B /* HubchatTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubchatTaskUITests.swift; sourceTree = "<group>"; };
 		0B1258B51E5709DD0075341B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B51F3FD1EFDB46D009BEFFE /* HubchatTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HubchatTask.entitlements; sourceTree = "<group>"; };
+		0B9434981F267A6D0068A85E /* QueueTestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueTestSwift.swift; path = ViewModel/QueueTestSwift.swift; sourceTree = "<group>"; };
 		0BDEA03A1E570D1200F62128 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelData.swift; path = Model/ModelData.swift; sourceTree = "<group>"; };
 		0BDEA03C1E570E6B00F62128 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelProtocol.swift; path = Model/ModelProtocol.swift; sourceTree = "<group>"; };
 		0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelProtocol.swift; path = ViewModel/ViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		0B1258921E5709DC0075341B /* HubchatTask */ = {
 			isa = PBXGroup;
 			children = (
+				0B51F3FD1EFDB46D009BEFFE /* HubchatTask.entitlements */,
 				0B341DA11E570B1500412A72 /* Model */,
 				0B341DA31E570B2200412A72 /* View */,
 				0B341DA21E570B1B00412A72 /* ViewModel */,
@@ -177,6 +181,7 @@
 			children = (
 				0BDEA03E1E572C1B00F62128 /* ViewModelProtocol.swift */,
 				0BF3DD2D1E57AC2D00D34471 /* ViewModel.swift */,
+				0B9434981F267A6D0068A85E /* QueueTestSwift.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -290,6 +295,17 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ENT89NLKC9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					0B1258A31E5709DD0075341B = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -457,6 +473,7 @@
 				0B1258941E5709DC0075341B /* AppDelegate.swift in Sources */,
 				0BF3DD3F1E5870D600D34471 /* PhotgraphyForumViewController.swift in Sources */,
 				0BDEA03D1E570E6B00F62128 /* ModelProtocol.swift in Sources */,
+				0B9434991F267A6D0068A85E /* QueueTestSwift.swift in Sources */,
 				0BF3DD301E57AF7100D34471 /* HCModel.swift in Sources */,
 				0BDEA03B1E570D1200F62128 /* ModelData.swift in Sources */,
 			);

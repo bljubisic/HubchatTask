@@ -21,6 +21,11 @@ class ViewModel: ViewModelProtocol{
         self.posts = []
         self.model = model
         self.model?.delegate = self
+        
+        let queueTest = QueueTestSwift()
+        DispatchQueue.global(qos: .background).async {
+            _ = queueTest.testQueue(message: "Starting")
+        }
     }
     
     func getPhotographyForumHeaderData() {
